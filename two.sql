@@ -16,7 +16,7 @@ CREATE TABLE temp (
          WHERE employee_id = starting_empid;
   
      WHILE sal <= 15000 LOOP
-       SELECT salary, manager_id, last_name INTO sal, mgr_id, lname
+       SELECT salary, manager_id, last_name ITO sal, mgr_id, lname
          FROM employees
            WHERE employee_id = mgr_id;
      END LOOP;
